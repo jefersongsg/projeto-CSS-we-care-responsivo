@@ -1,0 +1,146 @@
+* { 
+font-family: 'montserrat', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+header {
+    margin: 44px 0 144px 76px;
+}
+
+.logo-image {
+    width: 568px;
+    height: 500px;
+    margin-left: 125px;
+    display: inline-block;
+
+}
+.link-header { 
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #989D9C;
+    cursor: pointer;
+    margin-right: 23px;
+}
+.button-header { 
+    background:#665ae1;
+    height: 41px;
+    border: none;
+    width: 130px;
+    border-radius: 20.5px;
+    border: none;
+    cursor: pointer;
+}
+div{
+    display: inline-block;
+    margin-left:86px;
+}
+h1{
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 122px;
+    color:#515151;
+}
+h2{
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 71px;
+    color:#515151;
+}
+p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color:#848484;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+}
+.button-main{
+    background: #ADFF00;
+    width: 239px;
+    height: 64px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    filter:drop-shadow(0px 4px 4px 0px #00000040);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    color:#000000;
+}
+@media screen and (max-width: 750px){
+
+.logo-image{
+    width: 354px;
+    height: 317px;
+    display: block;
+    margin-top: 100px;
+  }
+
+header {
+    display: none;
+  }
+
+p {
+    display: none;
+  }
+.button-main{
+    display: block;
+    margin: inherit;
+   }
+h1 {
+    font-size: 55px;
+    display: block;
+    margin: inherit;
+   }
+h2 {
+    font-size: 35px;
+    display: block;
+    margin: inherit;
+   }
+}
+@media screen and (max-width: 480px){
+
+    .logo-image{
+        width: 354px;
+        height: 317px;
+        display: block;
+        margin-top: 100px;
+        margin-left: 35px;
+    }
+    
+    header {
+        display: none;
+    }
+    
+    p {
+        display: none;
+    }
+    .button-main{
+        display: block;
+        margin: inherit;
+    }
+    h1 {
+        font-size: 55px;
+        display: block;
+        margin: 10px 10px ;
+        margin-left: 30px;
+    }
+    h2 {
+        font-size: 35px;
+        display: block;
+        margin: 10px 10px ;
+        margin-left: 30px;
+    }
+    div {
+        margin-left: 40px;
+    }
+
+}
+
+
+
+    
