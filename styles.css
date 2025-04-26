@@ -1,146 +1,166 @@
 * { 
-font-family: 'montserrat', sans-serif;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'montserrat', sans-serif;
+overflow-x: hidden;
 } 
 
 header {
-    margin: 44px 0 144px 76px;
+    margin: 30px 0 50px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    & a{
+        font-weight: 600;
+        font-size: 15px;
+        color: #bbb;
+        cursor: pointer;
+    }& a:hover{
+        color: #ADFF00;
+    }
+    & button{
+        color: #fff;
+        background:#665ae1;
+        height: 40px;
+        border: none;
+        width: 130px;
+        border-radius: 20.5px;
+        border: none;
+        cursor: pointer;
+    }& button:hover{
+        color: #665ae1;
+        background: #ADFF00;
+    }
 }
 
-.logo-image {
-    width: 568px;
-    height: 500px;
-    margin-left: 125px;
-    display: inline-block;
-
-}
-.link-header { 
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29.26px;
-    color: #989D9C;
-    cursor: pointer;
-    margin-right: 23px;
-}
-.button-header { 
-    background:#665ae1;
-    height: 41px;
-    border: none;
-    width: 130px;
-    border-radius: 20.5px;
-    border: none;
-    cursor: pointer;
-}
-div{
-    display: inline-block;
-    margin-left:86px;
+main {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    & img {
+        width: 25vw;
+        height: 30vh;
+        margin: 20vh auto;
+    }
+}      
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 50vw;
 }
 h1{
-    font-size: 100px;
+    font-size: 90px;
     font-weight: 900;
-    line-height: 122px;
     color:#515151;
 }
 h2{
-    font-size: 58px;
+    font-size: 45px;
     font-weight: 500;
-    line-height: 71px;
     color:#515151;
 }
 p{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 29px;
     color:#848484;
-    width: 515px;
-    margin-top: 32px;
-    margin-bottom: 65px;
 }
 .button-main{
     background: #ADFF00;
-    width: 239px;
-    height: 64px;
-    border-radius: 30px;
+    height: 40px;
     border: none;
+    width: 130px;
+    border-radius: 20.5px;
     cursor: pointer;
     filter:drop-shadow(0px 4px 4px 0px #00000040);
-    font-size: 28px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 34px;
     color:#000000;
 }
-@media screen and (max-width: 750px){
+.button-main:hover{
+    background: #665ae1;
+}
 
-.logo-image{
-    width: 354px;
-    height: 317px;
-    display: block;
-    margin-top: 100px;
-  }
+@media screen and (max-width: 850px){
 
 header {
-    display: none;
-  }
-
-p {
-    display: none;
-  }
+    margin: 15px 0 40px 15px;
+    gap: 10px;
+    & a{
+        font-size: 11px;
+    }
+    & button{
+        height: 30px;
+        width: 90px;
+        font-size: 11px;
+    }
+}
+main {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    & img {
+        width: 25vw;
+        height: 30vh;
+    }
 .button-main{
-    display: block;
-    margin: inherit;
+    height: 30px;
+    width: 100px;
+    font-size: 11px;
    }
 h1 {
     font-size: 55px;
-    display: block;
-    margin: inherit;
    }
 h2 {
     font-size: 35px;
-    display: block;
-    margin: inherit;
    }
+  }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 510px){
 
-    .logo-image{
-        width: 354px;
-        height: 317px;
-        display: block;
-        margin-top: 100px;
-        margin-left: 35px;
+header {
+    margin: 10px;
+    gap: 5px;
+    & a{
+    font-size: 8px;
     }
-    
-    header {
-        display: none;
+    & button{
+    height: 20px;
+    width: 70px;
+    font-size: 8px;
     }
-    
-    p {
-        display: none;
-    }
-    .button-main{
-        display: block;
-        margin: inherit;
-    }
-    h1 {
-        font-size: 55px;
-        display: block;
-        margin: 10px 10px ;
-        margin-left: 30px;
-    }
-    h2 {
-        font-size: 35px;
-        display: block;
-        margin: 10px 10px ;
-        margin-left: 30px;
-    }
-    div {
-        margin-left: 40px;
-    }
-
 }
-
+main {
+    grid-template-columns:1fr;
+    & img {
+    width: 50vw;
+    height: 18vh;
+    margin: 30px auto;
+    }
+.button-main{
+    height: 20px;
+    width: 70px;
+    font-size: 8px;
+}
+h1 {
+    font-size: 25px;
+}
+h2 {
+    font-size: 16px;
+}
+p{
+    font-size: 12px;
+    
+}
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+}
+}
 
 
     
